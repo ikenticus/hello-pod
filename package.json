@@ -1,0 +1,23 @@
+{
+  "name": "hello-pod",
+  "version": "1.0.0",
+  "description": "Simple Hello Server to Test K8s CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikenticus/hello-pod.git"
+  },
+  "author": "ikenticus@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikenticus/hello-pod/issues"
+  },
+  "homepage": "https://github.com/ikenticus/hello-pod#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs": "0.0.1-security"
+  }
+}
