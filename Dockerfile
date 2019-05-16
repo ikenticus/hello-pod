@@ -1,4 +1,4 @@
-ARG NODE_VER=5.10
+ARG NODE_VER=8.15-slim
 FROM node:${NODE_VER}
 
 # ----- node build -----
@@ -8,6 +8,7 @@ FROM node:${NODE_VER} AS build
 WORKDIR /prep
 COPY . .
 
+RUN npm cache clean --force
 RUN npm install
 
 # ----- node release -----
