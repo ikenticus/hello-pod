@@ -7,7 +7,8 @@ podTemplate(label: 'jenkins-slave', containers: [
                         resourceRequestCpu: '200m', resourceLimitCpu: '300m',
                         resourceRequestMemory: '256Mi', resourceLimitMemory: '512Mi'),
     containerTemplate(name: 'nodejs', image: 'node:8.15-slim', command: 'cat', ttyEnabled: true),
-    containerTemplate(name: 'docker', image: 'docker:dind', command: 'cat', ttyEnabled: true),
+    //containerTemplate(name: 'docker', image: 'docker:dind', command: 'cat', ttyEnabled: true),
+    containerTemplate(name: 'docker', image: 'docker:latest', command: 'cat', ttyEnabled: true),
     containerTemplate(name: 'helm', image: 'alpine/helm:2.12.3', command: 'cat', ttyEnabled: true)
 ],
 volumes:[
