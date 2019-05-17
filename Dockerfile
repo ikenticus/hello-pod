@@ -8,7 +8,6 @@ FROM node:${NODE_VER} AS build
 WORKDIR /prep
 COPY . .
 
-RUN npm cache clean --force
 RUN npm install
 
 # ----- node release -----
